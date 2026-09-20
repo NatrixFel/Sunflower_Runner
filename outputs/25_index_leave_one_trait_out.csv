@@ -1,0 +1,11 @@
+table,trait_excluded,trait_weight,retained_of_5,base_five
+delivered,seed_yield,0.35,1,LI18 LI6 LI19 LI41 LI53
+delivered,oil_content,0.3,4,LI18 LI6 LI19 LI41 LI53
+delivered,seed_weight_1000,0.1,5,LI18 LI6 LI19 LI41 LI53
+delivered,head_diameter,0.1,4,LI18 LI6 LI19 LI41 LI53
+delivered,days_emergence_flowering,0.15,4,LI18 LI6 LI19 LI41 LI53
+rebuilt,seed_yield,0.35,2,LI18 LI6 LI41 LI53 LI19
+rebuilt,oil_content,0.3,4,LI18 LI6 LI41 LI53 LI19
+rebuilt,seed_weight_1000,0.1,5,LI18 LI6 LI41 LI53 LI19
+rebuilt,head_diameter,0.1,4,LI18 LI6 LI41 LI53 LI19
+rebuilt,days_emergence_flowering,0.15,4,LI18 LI6 LI41 LI53 LI19

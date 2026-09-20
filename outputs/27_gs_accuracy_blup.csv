@@ -1,0 +1,7 @@
+# H2_of_combination_mean and ceiling_sqrt_H2 recalculated on specification D020/D021,
+# 2026-08-22. GS_accuracy_CV1 and h2_GBLUP unchanged (different model).
+trait,GS_accuracy_CV1,h2_GBLUP,H2_of_combination_mean,ceiling_sqrt_H2,n
+seed_yield,0.193,0.533,0.426,0.653,162
+oil_content,0.654,0.782,0.899,0.948,156
+seed_weight_1000,0.837,0.806,0.911,0.955,156
+oil_yield,0.421,0.636,,,162

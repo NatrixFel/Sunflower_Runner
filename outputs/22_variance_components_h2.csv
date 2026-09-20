@@ -1,0 +1,6 @@
+# Specification D020/D021 (year, tester, year×tester fixed; line, tester×line,
+# year×line, year×tester×line random). Recalculated 2026-08-22.
+trait,sigma2_line,sigma2_tester_x_line,sigma2_year_x_line,sigma2_year_x_tester_x_line,sigma2_error,sigma2_genotype,sigma2_genotype_x_year,plot_repeatability,H2_of_combination_mean,h2_GCA_line,n_hybrids,n_plots
+seed_yield,0.019976,0.050948,0.075819,0.029534,0.257847,0.070924,0.105352,0.163,0.426,0.212,162,963
+oil_content,3.987538,0.352095,0.168852,0.0909,2.129857,4.339634,0.259752,0.645,0.899,0.922,162,957
+seed_weight_1000,74.0383,7.6082,0.3514,7.075,25.3832,81.6465,7.4264,0.713,0.911,0.933,162,962

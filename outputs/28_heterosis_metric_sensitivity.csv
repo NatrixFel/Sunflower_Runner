@@ -1,0 +1,5 @@
+metric,data,n,r,p,p_rounded,CI95_lo,CI95_hi
+binary_var2,previous_n159,159,0.138,0.0827189738108849,0.0827,-0.018,0.2875
+binary_var2,corrected_n162,162,0.1464,0.0630472086649895,0.063,-0.008,0.294
+continuous_methods_2_8,previous_n159,159,0.2441,0.0019295585136073,0.0019,0.092,0.3851
+continuous_methods_2_8,corrected_n162_results_3_3,162,0.2615,0.0007754103947011,0.0008,0.1118,0.3996

@@ -1,0 +1,9 @@
+trait,mother,father,year,rep,value
+oil_content,VK101A,LI29,2022,1,50.0
+oil_content,VK101A,LI31,2022,1,40.7
+oil_content,VK934A,LI41,2022,3,39.2
+oil_content,VK934A,LI45,2022,1,43.6
+oil_content,VK101A,LI29,2023,2,51.3
+oil_content,VK101A,LI31,2023,2,40.8
+seed_weight_1000,VK934A,LI16,2023,2,0.0
+head_diameter,VK101A,LI15,2022,1,23.1

@@ -1,0 +1,10 @@
+trait,h2_mean,GSacc_mean,EMMAXtop_mean,n5e8_mean,h2_BLUP,GSacc_BLUP,EMMAXtop_BLUP,n5e8_BLUP,ΔGSacc
+oil_content,1.0,0.266,chr1:145.5M,0,1.0,0.264,chr1:145.5M,0,-0.002
+seed_weight_1000,1.0,0.407,chr13:4.7M,0,1.0,0.434,chr13:4.7M,0,0.027
+plant_height,0.0,-1.0,chr13:136.8M,0,0.0,-1.0,chr13:136.8M,0,0.0
+head_diameter,0.84,0.581,chr8:59.4M,0,0.83,0.575,chr8:59.4M,0,-0.006
+hull_content,1.0,0.34,chr8:7.6M,0,1.0,0.299,chr8:7.6M,0,-0.041
+days_emergence_flowering,1.0,0.293,chr5:90.2M,0,1.0,0.376,chr5:90.2M,0,0.083
+days_central_to_side,0.33,0.207,chr7:144.2M,0,0.08,-0.08,chr3:14.0M,0,-0.287
+autofertility_open,1.0,0.667,chr11:183.9M,0,1.0,0.416,chr3:151.5M,0,-0.251
+autofertility_self,1.0,0.41,chr3:151.5M,0,1.0,0.667,chr11:183.9M,0,0.257

@@ -1,0 +1,26 @@
+value,in_text,recomputed,matched
+H2_of_combination_mean_oil_content,0.9,0.8951,yes
+H2_of_combination_mean_seed_weight_1000,0.91,0.9104,yes
+H2_of_combination_mean_seed_yield,0.43,0.4266,yes
+plot_repeatability_seed_yield,0.16,0.1635,yes
+baker_seed_yield_plot_D020,0.44,0.4389,yes
+baker_seed_yield_year_means,0.716,0.7294,yes
+baker_oil_content_plot_D020,0.958,0.956,yes
+baker_oil_content_year_means,0.936,0.9389,yes
+baker_seed_weight_1000_plot_D020,0.951,0.952,yes
+baker_seed_weight_1000_year_means,0.936,0.9398,yes
+GCA VK101A — oil_content,1.2,1.1971,yes
+GCA VK934A — seed_weight_1000,10.9,10.9173,yes
+GCA VK934A — plant_height,8.4,8.4306,yes
+detectable_PVE_n54_power80,42.0,42.3083,yes
+n_for_80pct_power_PVE_15,225.0,224.4056,yes
+n_for_80pct_power_PVE_10,355.0,356.4089,yes
+n_for_80pct_power_PVE_5,750.0,752.4188,yes
+lambda_hybrid_EMMAX_mothers,,1.0259,—
+n_sig_5e8_hybrids_mothers,0.0,0.0,yes
+lambda_hybrid_EMMAX_mothers_3PC,,1.0671,—
+n_sig_5e8_hybrids_mothers_3PC,0.0,0.0,yes
+GS_accuracy_seed_weight_1000,0.84,0.837,yes
+GS_accuracy_oil_content,0.65,0.654,yes
+GS_accuracy_oil_yield,0.42,0.421,yes
+GS_accuracy_seed_yield,0.19,0.193,yes

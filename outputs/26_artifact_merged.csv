@@ -1,0 +1,17 @@
+callset,trait,λ,n_p<5e-8,emp_threshold_5pct,n_below_emp,n_SNP
+54_with_confectionery,oil_content,1.02,27,2.7326761983208984e-06,31,81903
+54_with_confectionery,hull_content,1.05,0,2.542942486999664e-06,106,81903
+54_with_confectionery,seed_weight_1000,1.12,1,2.732721555405127e-06,40,81903
+54_with_confectionery,head_diameter,0.96,0,3.296966204199711e-06,0,81903
+54_with_confectionery,plant_height,1.0,0,5.198860561509347e-06,0,81903
+54_with_confectionery,days_emergence_flowering,1.01,0,2.673761910953789e-06,0,81903
+54_with_confectionery,autofertility_self,1.0,0,2.7636899696402386e-06,0,81903
+54_with_confectionery,autofertility_open,1.04,0,2.696765311457823e-06,0,81903
+52_oilseed_only,oil_content,0.97,0,2.3741859677616813e-06,0,80410
+52_oilseed_only,hull_content,0.99,0,2.418442441434519e-06,0,80410
+52_oilseed_only,seed_weight_1000,1.02,0,2.032659985263329e-06,0,80410
+52_oilseed_only,head_diameter,0.92,0,2.9650813611529384e-06,0,80410
+52_oilseed_only,plant_height,0.87,0,4.703352570532445e-06,0,80410
+52_oilseed_only,days_emergence_flowering,0.96,0,2.271997939685368e-06,0,80410
+52_oilseed_only,autofertility_self,0.98,0,2.635590526121348e-06,0,80410
+52_oilseed_only,autofertility_open,0.98,0,2.264271063585777e-06,0,80410

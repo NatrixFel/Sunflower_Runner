@@ -1,0 +1,7 @@
+.env
+paths.local.py
+names.py
+out/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
