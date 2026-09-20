@@ -8,7 +8,7 @@ Running title: *Limits of small sunflower panels*
 
 This repository is the analysis and genotyping pipeline for a sunflower (*Helianthus annuus* L.) North Carolina Design II (NCII) panel: three CMS mother lines × 54 paternal lines (52 oilseed, 2 confectionery) and their 162 hybrids. Parents were genotyped by GBS; hybrid genotypes were formed in silico. The scripts estimate combining ability, genomic prediction, additive GWAS (EMMAX, BLINK), a dominance-deviation scan, and the figures in the paper.
 
-Call sets used by the paper (`23_merged.vcf.gz`, `23_merged_genotypes.npz`, `23_no_imputation.vcf`) live in the journal deposit next to this folder (`04_Депозит` by default). Tables written by the scripts go to `outputs/`. Machine-specific paths are read from a gitignored `.env` (see `.env.example`).
+The GWAS call sets are in `vcf/`: the union set `23_merged.vcf.gz` (additive scans, genomic prediction, figures) and the no-imputation set `23_no_imputation.vcf` (dominance-scan robustness check). The companion matrix `23_merged_genotypes.npz` stays in the journal deposit next to this folder (`04_Депозит` by default). Tables written by the scripts go to `outputs/`. Machine-specific paths are read from a gitignored `.env` (see `.env.example`).
 
 Alignment and variant calling used the [ChoCallate](https://github.com/alermol/ChoCallate) workflow.
 
@@ -43,6 +43,7 @@ paths.py          deposit / outputs / optional raw-data roots
 names.py          English ↔ Russian I/O map (gitignored; required to run)
 .env.example      copy to .env
 outputs/          script-generated tables and GAPIT folders
+vcf/              GWAS call sets (`23_merged.vcf.gz`, `23_no_imputation.vcf`)
 scripts/
   models/         EMMAX, BLINK, Baker REML (imported, not run first)
   phenotypes/     22_ field and year-mean rebuilds
@@ -210,4 +211,4 @@ See also `genotype/README.md`.
 
 ## Outputs
 
-`outputs/` holds the CSV / parquet / JSON tables the scripts write, plus `GAPIT_54_lines/` and `GAPIT_52_lines/`. Call-set binaries stay on the deposit (`23_merged.vcf.gz`, `23_merged_genotypes.npz`, `23_no_imputation.vcf`).
+`outputs/` holds the CSV / parquet / JSON tables the scripts write, plus `GAPIT_54_lines/` and `GAPIT_52_lines/`. The two GWAS VCFs are in `vcf/`. The companion matrix `23_merged_genotypes.npz` remains on the journal deposit.
