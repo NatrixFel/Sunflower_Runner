@@ -8,7 +8,7 @@ Running title: *Limits of small sunflower panels*
 
 This repository is the analysis and genotyping pipeline for a sunflower (*Helianthus annuus* L.) North Carolina Design II (NCII) panel: three CMS mother lines × 54 paternal lines (52 oilseed, 2 confectionery) and their 162 hybrids. Parents were genotyped by GBS; hybrid genotypes were formed in silico. The scripts estimate combining ability, genomic prediction, additive GWAS (EMMAX, BLINK), a dominance-deviation scan, and the figures in the paper.
 
-The GWAS call sets are in `vcf/`: `emmax_input.vcf.gz` (the union set used by EMMAX and the Python BLINK scans) and `23_no_imputation.vcf` (dominance-scan robustness check). The companion matrix `23_merged_genotypes.npz` stays in the journal deposit next to this folder (`04_Депозит` by default). Tables written by the scripts go to `outputs/`. Machine-specific paths are read from a gitignored `.env` (see `.env.example`).
+The GWAS call sets are in `vcf/`: `emmax_input.vcf.gz` (the union set used by EMMAX and the Python BLINK scans), `GAPIT_input.vcf.gz` (the separately assembled, LD-pruned panel used by GAPIT v3 BLINK), and `23_no_imputation.vcf` (dominance-scan robustness check). The companion matrix `23_merged_genotypes.npz` stays in the journal deposit next to this folder (`04_Депозит` by default). Tables written by the scripts go to `outputs/`. Machine-specific paths are read from a gitignored `.env` (see `.env.example`).
 
 Alignment and variant calling used the [ChoCallate](https://github.com/alermol/ChoCallate) workflow.
 
@@ -43,7 +43,7 @@ paths.py          deposit / outputs / optional raw-data roots
 names.py          English ↔ Russian I/O map (gitignored; required to run)
 .env.example      copy to .env
 outputs/          script-generated tables and GAPIT folders
-vcf/              GWAS call sets (`emmax_input.vcf.gz`, `23_no_imputation.vcf`)
+vcf/              GWAS call sets (`emmax_input.vcf.gz`, `GAPIT_input.vcf.gz`, `23_no_imputation.vcf`)
 scripts/
   models/         EMMAX, BLINK, Baker REML (imported, not run first)
   phenotypes/     22_ field and year-mean rebuilds
