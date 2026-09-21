@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Paternal composite index, its bootstrap, and maternal GCA — before and after
-correcting the shift in the year-means summary table (`scripts\\22_year_means_shift.py`).
+correcting the shift in the year-means summary table (`scripts\\221_year_means_shift.py`).
 
 The index definition is canonical, as in `25_index_canonical.py`:
 z-standardize GCA over all 54 fathers (ddof = 1), reverse the emergence-to-flowering
@@ -105,8 +105,8 @@ def leave_one_trait_out(g):
     return base, out
 
 
-TABLES = [("BEFORE correction", "delivered", en_table(pd.read_csv(INTERMEDIATE / "22_hybrid_means_delivered.csv"))),
-          ("AFTER correction", "rebuilt", en_table(pd.read_csv(OUT / "22_hybrid_means_corrected.csv")))]
+TABLES = [("BEFORE correction", "delivered", en_table(pd.read_csv(INTERMEDIATE / "221_hybrid_means_delivered.csv"))),
+          ("AFTER correction", "rebuilt", en_table(pd.read_csv(OUT / "221_hybrid_means_corrected.csv")))]
 
 STAB = []
 # Wave 16 (Sh8): leave-one-trait-out was printed only to the console, and the figure

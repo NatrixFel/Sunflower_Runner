@@ -37,8 +37,8 @@ import warnings; warnings.filterwarnings("ignore")
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", line_buffering=True)
 
 ROOT = DEPOSIT
-REPO = OUT / "22_hybrid_plot_level.parquet"
-FIVE = INTERMEDIATE / "22_hybrids_reps_long.csv"
+REPO = OUT / "221_hybrid_plot_level.parquet"
+FIVE = INTERMEDIATE / "221_hybrids_reps_long.csv"
 
 
 # ------------------------------------------------------------------ helpers

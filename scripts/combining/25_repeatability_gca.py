@@ -26,7 +26,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 D = DEPOSIT
-plot = en_table(pd.read_parquet(OUT / "22_hybrid_plot_level.parquet"))
+plot = en_table(pd.read_parquet(OUT / "221_hybrid_plot_level.parquet"))
 CONF = ("LI29", "LI30")
 
 

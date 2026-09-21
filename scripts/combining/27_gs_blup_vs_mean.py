@@ -57,7 +57,7 @@ print(f"lines: {len(oil52)};  HONEST panel: {Gi.shape[0]:,} SNP "
 p = Gi.mean(1) / 2; W = Gi - 2 * p[:, None]
 K = (W.T @ W) / (2 * np.sum(p * (1 - p)))
 
-lines_v2 = en_table(pd.read_parquet(OUT / "22_lines_tidy.parquet"))
+lines_v2 = en_table(pd.read_parquet(OUT / "221_lines_tidy.parquet"))
 mean_ph = lines_v2.groupby(["genotype", "trait"])["value"].mean().unstack()
 blup = en_table(pd.read_csv(INTERMEDIATE / "gapit_phenotypes.csv", dtype={"Taxa": str}))
 blup["line"] = blup["Taxa"].apply(seqid); blup = blup.set_index("line")

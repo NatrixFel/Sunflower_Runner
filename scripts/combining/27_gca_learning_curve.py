@@ -19,8 +19,8 @@ from scipy.optimize import minimize_scalar
 import warnings; warnings.filterwarnings("ignore")
 
 D = DEPOSIT
-plot = en_table(pd.read_parquet(OUT / "22_hybrid_plot_level.parquet"))
-blup = en_table(pd.read_csv(OUT / "22_hybrid_blup_phenotypes.csv"))
+plot = en_table(pd.read_parquet(OUT / "221_hybrid_plot_level.parquet"))
+blup = en_table(pd.read_csv(OUT / "222_hybrid_blup_phenotypes.csv"))
 blup[["mother", "father"]] = blup["hybrid"].str.split("_", n=1, expand=True)
 TR = ["seed_yield", "oil_content", "seed_weight_1000", "oil_yield"]
 CONF = ["LI29", "LI30"]

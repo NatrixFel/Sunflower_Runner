@@ -137,7 +137,7 @@ def emmax_fast(y, K, Gm, PCs):
     return pv, lam
 
 # ---------------- phenotypes ----------------
-ph = en_table(pd.read_parquet(OUT / "22_lines_tidy.parquet"))
+ph = en_table(pd.read_parquet(OUT / "221_lines_tidy.parquet"))
 phen = {}
 for tr in TRAITS:
     s = ph[ph["trait"] == tr].groupby("genotype")["value"].mean()

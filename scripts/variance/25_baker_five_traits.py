@@ -11,7 +11,7 @@ The model and REML engine are those adopted by decision D020 (scripts/baker_v4.p
         + Line + Tester×Line + Year×Line + Year×Tester×Line  (random) + error
     Baker's ratio = 2 s2(Line) / (2 s2(Line) + s2(Tester×Line))
 
-Input:  deposit 22_hybrid_plot_level.parquet
+Input:  deposit 221_hybrid_plot_level.parquet
 Output: 25_baker_five_traits.csv
         fix03_baker_five_traits.txt
 """
@@ -33,7 +33,7 @@ sys.path.insert(0, str(REPO / "scripts"))
 sys.dont_write_bytecode = True
 from baker_v4 import reml_fit, moments                      # noqa: E402
 
-PARQ = OUT / "22_hybrid_plot_level.parquet"
+PARQ = OUT / "221_hybrid_plot_level.parquet"
 OUT_CSV = OUT / "25_baker_five_traits.csv"
 OUT_TXT = OUT / "fix03_baker_five_traits.txt"
 TRAITS = ["seed_yield", "oil_content", "seed_weight_1000", "plant_height", "head_diameter"]

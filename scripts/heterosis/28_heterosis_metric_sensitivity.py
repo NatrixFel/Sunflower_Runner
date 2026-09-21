@@ -3,8 +3,8 @@
 Sensitivity of the “distance ↔ yield” result (Results 3.3) to the choice of distance metric
 and to the denominator (159 versus 162 hybrids). Four combinations:
   1. old metric (binary indicator “both parents are opposite homozygotes”, var2)
-     on the former data (summary table 22_hybrid_means_delivered.csv, n=159)
-  2. the same metric on the corrected data (plot-level raw 22_hybrid_plot_level.parquet, n=162)
+     on the former data (summary table 221_hybrid_means_delivered.csv, n=159)
+  2. the same metric on the corrected data (plot-level raw 221_hybrid_plot_level.parquet, n=162)
   3. the paper’s continuous metric, mean(|round(gm)-round(gf)|/2) (merged VCF), on the former data
   4. the same metric on the corrected data — what is printed in Results 3.3 / Methods 2.8
 
@@ -44,8 +44,8 @@ MOTH = {"M1": "VK101", "M2": "VA761", "M3": "VK934"}
 LONG = {"VK101A": "VK101", "VA761A": "VA761", "VK934A": "VK934"}
 
 # ---------- data (phenotypes) ----------
-hm = en_table(pd.read_csv(OUT / "22_hybrid_means_delivered.csv", encoding="utf-8-sig"))  # "former", n=159
-pl = en_table(pd.read_parquet(OUT / "22_hybrid_plot_level.parquet"))  # plot-level raw, 162 combinations
+hm = en_table(pd.read_csv(OUT / "221_hybrid_means_delivered.csv", encoding="utf-8-sig"))  # "former", n=159
+pl = en_table(pd.read_parquet(OUT / "221_hybrid_plot_level.parquet"))  # plot-level raw, 162 combinations
 fixed = (pl[pl["trait"] == "seed_yield"].groupby(["mother", "father"])["value"].mean()
          .reset_index().rename(columns={"value": "seed_yield"}))
 assert len(hm) == 159 and len(fixed) == 162

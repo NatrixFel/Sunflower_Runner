@@ -20,13 +20,13 @@ import pathlib
 
 D = DEPOSIT
 # ---------- 1. hybrid means from plot-level raw data (162) ----------
-plot = en_table(pd.read_parquet(OUT / "22_hybrid_plot_level.parquet"))
+plot = en_table(pd.read_parquet(OUT / "221_hybrid_plot_level.parquet"))
 means162 = (plot.groupby(["mother", "father", "trait"])["value"].mean()
             .unstack("trait").reset_index())
 print("hybrid means from plot-level data:", len(means162))
 
 # ---------- 2. phase3c summary table (159) ----------
-hm = en_table(pd.read_csv(OUT / "22_hybrid_means_delivered.csv"))
+hm = en_table(pd.read_csv(OUT / "221_hybrid_means_delivered.csv"))
 key159 = set(zip(hm["mother_long"], hm["father"]))
 key162 = set(zip(means162["mother"], means162["father"]))
 print("in plot-level data but not in the summary:", sorted(key162 - key159))
